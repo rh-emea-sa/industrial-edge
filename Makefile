@@ -16,6 +16,9 @@ ifeq ($(BOOTSTRAP),1)
 	make sleep-seed
 endif
 
+install-odf:
+	oc apply -f ocs-application.yaml
+
 upgrade: upgrade-secrets
 	make -f common/Makefile upgrade
 
