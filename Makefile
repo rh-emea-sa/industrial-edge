@@ -13,6 +13,7 @@ default: show
 install: deploy
 ifeq ($(BOOTSTRAP),1)
 	make secret
+	make install-odf
 	make sleep-seed
 endif
 
