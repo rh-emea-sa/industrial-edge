@@ -11,7 +11,7 @@ global:
     account: rh-emea-sa-bot
     username: rh-emea-sa-bot
     email: rh.emea.sa.bot@gmail.com
-    dev_revision: odf
+    dev_revision: main
 
   quay:
     provider: quay.io
