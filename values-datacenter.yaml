@@ -26,45 +26,39 @@ site:
   - name: advanced-cluster-management
     namespace: open-cluster-management
     channel: release-2.3
-    csv: advanced-cluster-management.v2.3.2
 
   - name: seldon-operator
     namespace: manuela-ml-workspace
     source: community-operators
-    csv: seldon-operator.v1.12.0
+    channel: stable
 
   - name: opendatahub-operator
     source: community-operators
-    csv: opendatahub-operator.v1.1.0
+    channel: stable
 
   - name: openshift-pipelines-operator-rh
-    csv: redhat-openshift-pipelines.v1.5.2
+    channel: stable
 
   # TODO: Allow namespace to be a list
   - name: amq-streams
     namespace: manuela-data-lake-central-kafka-cluster
     channel: amq-streams-1.7.x
-    csv: amqstreams.v1.7.1
 
   - name: amq-streams
     namespace: manuela-tst-all
     channel: amq-streams-1.7.x
-    csv: amqstreams.v1.7.1
 
   - name: amq-broker
     namespace: manuela-tst-all
     channel: 7.8.x
-    csv: amq-broker-operator.v7.8.1-opr-3
 
   - name: red-hat-camel-k
     namespace: manuela-data-lake-central-s3-store
     channel: 1.4.x
-    csv: red-hat-camel-k-operator.v1.4.0
 
   - name: red-hat-camel-k
     namespace: manuela-tst-all
     channel: 1.4.x
-    csv: red-hat-camel-k-operator.v1.4.0
 
   projects:
   - datacenter
