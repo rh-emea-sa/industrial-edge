@@ -15,7 +15,7 @@ global:
 
   quay:
     provider: quay.io
-    account: mmurakam+rh_emea_sa_bot
+    account: rh_emea_sa_bot
 
   datacenter:
     clustername: PLAINTEXT
