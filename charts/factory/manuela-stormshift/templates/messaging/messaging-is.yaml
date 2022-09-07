@@ -7,3 +7,10 @@ spec:
   lookupPolicy:
     local: true
   tags:
+  - name: 0.3.2-3
+    from:
+      kind: DockerImage
+      name: quay.io/rh_emea_sa_bot/iot-consumer:0.3.2-3
+    importPolicy: {}
+    referencePolicy:
+      type: Local
