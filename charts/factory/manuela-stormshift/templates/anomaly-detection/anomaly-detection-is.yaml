@@ -9,3 +9,10 @@ spec:
   lookupPolicy:
     local: false
   tags:
+  - name: 0.3.2-3
+    from:
+      kind: DockerImage
+      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-3
+    importPolicy: {}
+    referencePolicy:
+      type: Local

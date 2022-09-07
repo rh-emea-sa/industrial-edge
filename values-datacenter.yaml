@@ -15,20 +15,17 @@ site:
   - staging
   - openshift-storage
 
-  operatorgroupExcludes:
-  - manuela-ml-workspace
-
   subscriptions:
   - name: ocs-operator
     namespace: openshift-storage
     channel: stable-4.8
-  
+
   - name: advanced-cluster-management
     namespace: open-cluster-management
     channel: release-2.3
 
   - name: seldon-operator
-    namespace: manuela-ml-workspace
+    namespace: manuela-tst-all
     source: community-operators
     channel: stable
 
@@ -42,11 +39,11 @@ site:
   # TODO: Allow namespace to be a list
   - name: amq-streams
     namespace: manuela-data-lake-central-kafka-cluster
-    channel: amq-streams-1.7.x
+    channel: amq-streams-1.8.x
 
   - name: amq-streams
     namespace: manuela-tst-all
-    channel: amq-streams-1.7.x
+    channel: amq-streams-1.8.x
 
   - name: amq-broker
     namespace: manuela-tst-all
@@ -63,7 +60,7 @@ site:
   projects:
   - datacenter
   - datalake
- 
+
   applications:
   - name: acm
     namespace: open-cluster-management
@@ -148,15 +145,15 @@ site:
 #    targetRevision: stable
 #    overrides:
 #    - name: myparam
-#      value: myparam 
-#  
+#      value: myparam
+#
 #  - name: pipelines
 #    namespace: staging
 #    project: datacenter
 #    path: applications/pipeline
 #    repoURL: https://github.com/you/applications.git
 #    targetRevision: main
-#  
+#
 #   Additional applications
 #   Be sure to include additional resources your apps will require
 #   +X machines
