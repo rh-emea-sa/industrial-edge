@@ -25,11 +25,6 @@ site:
     channel: release-2.3
 
   - name: seldon-operator
-    namespace: manuela-ml-workspace
-    source: community-operators
-    channel: stable
-
-  - name: seldon-operator
     namespace: manuela-tst-all
     source: community-operators
     channel: stable
