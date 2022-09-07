@@ -15,9 +15,6 @@ site:
   - staging
   - openshift-storage
 
-  operatorgroupExcludes:
-  - manuela-ml-workspace
-
   subscriptions:
   - name: ocs-operator
     namespace: openshift-storage
