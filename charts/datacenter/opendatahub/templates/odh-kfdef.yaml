@@ -1,63 +1,37 @@
 apiVersion: kfdef.apps.kubeflow.org/v1
 kind: KfDef
 metadata:
-  annotations:
-    kfctl.kubeflow.io/force-delete: 'false'
   name: opendatahub
+  namespace: manuela-ml-workspace
 spec:
   applications:
-# common config map - should probably always be present
-    - name: odh-common
-      kustomizeConfig:
+    - kustomizeConfig:
         repoRef:
           name: manifests
           path: odh-common
-    - name: jupyterhub
-      kustomizeConfig:
+      name: odh-common
+    - kustomizeConfig:
         parameters:
           - name: s3_endpoint_url
             value: s3.odh.com
         repoRef:
           name: manifests
           path: jupyterhub/jupyterhub
-    - name: notebook-images
-      kustomizeConfig:
+      name: jupyterhub
+    - kustomizeConfig:
         overlays:
           - additional
         repoRef:
           name: manifests
           path: jupyterhub/notebook-images
+      name: notebook-images
     - kustomizeConfig:
+        overlays:
+          - authentication
         repoRef:
           name: manifests
-          path: openshift/openshiftstack/application/openshift/openshift-scc/overlays/istio
-      name: openshift-scc
-    - kustomizeConfig:
-        repoRef:
-          name: manifests
-          path: openshift/openshiftstack/application/istio-1-1-1-Openshift
-      name: istio
-    - kustomizeConfig:
-        repoRef:
-          name: manifests
-          path: openshift/openshiftstack/application/cert-manager-1.5
-      name: cert-manager
-    - kustomizeConfig:
-        repoRef:
-          name: manifests
-          path: openshift/openshiftstack/application/kfp-tekton/base
-      name: kfp-tekton
-    - kustomizeConfig:
-        repoRef:
-          name: manifests
-          path: openshift/openshiftstack/application/volumes-web-app/base
-      name: volumes-web-app
-    - kustomizeConfig:
-        repoRef:
-          name: manifests
-          path: openshift/openshiftstack
-      name: kubeflow-apps
+          path: odh-dashboard
+      name: odh-dashboard
   repos:
     - name: manifests
-      uri: https://github.com/opendatahub-io/manifests/archive/v1.4.0-rc.2-openshift.tar.gz
-    version: v1.4.0-rc.2
+      uri: 'https://github.com/opendatahub-io/odh-manifests/tarball/v1.3'

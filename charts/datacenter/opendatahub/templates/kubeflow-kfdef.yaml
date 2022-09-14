@@ -1,0 +1,41 @@
+apiVersion: kfdef.apps.kubeflow.org/v1
+kind: KfDef
+metadata:
+  name: kubeflow
+  namespace: kubeflow
+spec:
+  applications:
+  - kustomizeConfig:
+      repoRef:
+        name: manifests
+        path: openshift/openshiftstack/application/openshift/openshift-scc/overlays/istio
+    name: openshift-scc
+  - kustomizeConfig:
+      repoRef:
+        name: manifests
+        path: openshift/openshiftstack/application/istio-1-1-1-Openshift
+    name: istio
+  - kustomizeConfig:
+      repoRef:
+        name: manifests
+        path: openshift/openshiftstack/application/cert-manager-1.5
+    name: cert-manager
+  - kustomizeConfig:
+      repoRef:
+        name: manifests
+        path: openshift/openshiftstack/application/kfp-tekton/base
+    name: kfp-tekton
+  - kustomizeConfig:
+      repoRef:
+        name: manifests
+        path: openshift/openshiftstack/application/volumes-web-app/base
+    name: volumes-web-app
+  - kustomizeConfig:
+      repoRef:
+        name: manifests
+        path: openshift/openshiftstack
+    name: kubeflow-apps
+  repos:
+  - name: manifests
+    uri: https://github.com/opendatahub-io/manifests/archive/v1.4.0-rc.2-openshift.tar.gz
+  version: v1.4.0-rc.2

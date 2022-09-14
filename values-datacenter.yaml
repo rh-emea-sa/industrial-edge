@@ -14,6 +14,7 @@ site:
   - manuela-data-lake-central-kafka-cluster
   - staging
   - openshift-storage
+  - kubeflow
 
   subscriptions:
   - name: ocs-operator
