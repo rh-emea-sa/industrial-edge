@@ -2,7 +2,6 @@ apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
   name: manuela-kafka-cluster
-  namespace: manuela-tst-all
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
