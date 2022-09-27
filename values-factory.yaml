@@ -16,27 +16,23 @@ site:
   - name: seldon-operator
     namespace: manuela-stormshift-messaging
     source: community-operators
-    csv: seldon-operator.v1.12.0
-
+    channel: stable
+    
   - name: amq-streams
     namespace: manuela-stormshift-messaging
-    channel: amq-streams-1.7.x
-    csv: amqstreams.v1.7.1
-
+    channel: amq-streams-1.8.x
+    
   - name: amq-streams
     namespace: factory-lake
-    channel: amq-streams-1.7.x
-    csv: amqstreams.v1.7.1
+    channel: amq-streams-1.8.x
 
   - name: amq-broker
     namespace: manuela-stormshift-messaging
     channel: 7.8.x
-    csv: amq-broker-operator.v7.8.1-opr-3
 
   - name: red-hat-camel-k
     namespace: manuela-stormshift-messaging
     channel: 1.4.x
-    csv: red-hat-camel-k-operator.v1.4.0
 
   - name: red-hat-camel-k
     namespace: factory-s3-store
