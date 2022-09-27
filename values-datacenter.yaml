@@ -23,7 +23,7 @@ site:
 
   - name: advanced-cluster-management
     namespace: open-cluster-management
-    channel: release-2.3
+    channel: release-2.4
 
   - name: seldon-operator
     namespace: manuela-tst-all
@@ -46,10 +46,13 @@ site:
     namespace: manuela-tst-all
     channel: amq-streams-1.8.x
 
-  - name: amq-broker
+#  - name: amq-broker
+#    namespace: manuela-tst-all
+#    channel: 7.8.x
+  - name: amq-broker-rhel8
     namespace: manuela-tst-all
-    channel: 7.8.x
-
+    channel: 7.10.x
+    
   - name: red-hat-camel-k
     namespace: manuela-data-lake-central-s3-store
     channel: 1.4.x
