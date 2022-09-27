@@ -17,7 +17,7 @@ site:
   - kubeflow
 
   subscriptions:
-  - name: odf-operator
+  - name: ocs-operator
     namespace: openshift-storage
     channel: stable-4.10
 
