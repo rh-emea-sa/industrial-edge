@@ -19,7 +19,7 @@ site:
   subscriptions:
   - name: ocs-operator
     namespace: openshift-storage
-    channel: stable-4.10
+    channel: stable-4.8
 
   - name: advanced-cluster-management
     namespace: open-cluster-management
