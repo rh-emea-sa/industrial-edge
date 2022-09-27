@@ -13,6 +13,7 @@ site:
   operatorgroupExcludes:
   - manuela-factory-ml-workspace
 
+  subscriptions:
   - name: seldon-operator
     namespace: manuela-stormshift-messaging
     source: community-operators
