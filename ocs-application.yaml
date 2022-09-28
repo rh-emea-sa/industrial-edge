@@ -28,6 +28,6 @@ spec:
           https://github.com/rh-emea-sa/industrial-edge/raw/odf/values-datacenter.yaml
     path: charts/global/openshift-container-storage
     repoURL: 'https://github.com/rh-emea-sa/industrial-edge.git'
-    targetRevision: odf
+    targetRevision: ml-ci-cd-410
   syncPolicy:
     automated: {}
