@@ -83,6 +83,11 @@ site:
     project: datacenter
     path: charts/datacenter/pipelines
 
+  - name: pipelines
+    namespace: tekton-pipelines
+    project: datacenter
+    path: charts/datacenter/tekton
+
   - name: central-kafka
     namespace: manuela-data-lake-central-kafka-cluster
     project: datalake
