@@ -18,10 +18,10 @@ global:
     account: rh_emea_sa_bot
 
   datacenter:
-    clustername: PLAINTEXT
-    domain: PLAINTEXT
+    clustername: cluster-wdvml
+    domain: wdvml.sandbox968.opentlc.com
 
   edge:
-    clustername: PLAINTEXT
-    domain: PLAINTEXT
+    clustername: cluster-wdvml
+    domain: wdvml.sandbox968.opentlc.com
 
