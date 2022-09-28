@@ -18,9 +18,9 @@ global:
     account: rh_emea_sa_bot
 
   datacenter:
-    clustername: cluster-spmgq
+    clustername: xxxx
     domain: spmgq.sandbox2039.opentlc.com
 
   edge:
-    clustername: cluster-spmgq
+    clustername: cxxx
     domain: spmgq.sandbox2039.opentlc.com
