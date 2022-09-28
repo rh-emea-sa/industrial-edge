@@ -27,9 +27,9 @@ site:
     namespace: factory-lake
     channel: amq-streams-1.8.x
 
-  - name: amq-broker
+  - name: amq-broker-rhel8
     namespace: manuela-stormshift-messaging
-    channel: 7.8.x
+    channel: 7.10.x
 
   - name: red-hat-camel-k
     namespace: manuela-stormshift-messaging
