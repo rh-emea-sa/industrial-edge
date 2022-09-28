@@ -17,13 +17,13 @@ site:
   - kubeflow
 
   subscriptions:
-  - name: ocs-operator
+  - name: odf-operator
     namespace: openshift-storage
-    channel: stable-4.8
+    channel: stable-4.10
 
   - name: advanced-cluster-management
     namespace: open-cluster-management
-    channel: release-2.3
+    channel: release-2.4
 
   - name: seldon-operator
     namespace: manuela-tst-all
@@ -46,9 +46,9 @@ site:
     namespace: manuela-tst-all
     channel: amq-streams-1.8.x
 
-  - name: amq-broker
+  - name: amq-broker-rhel8
     namespace: manuela-tst-all
-    channel: 7.8.x
+    channel: 7.10.x
 
   - name: red-hat-camel-k
     namespace: manuela-data-lake-central-s3-store
