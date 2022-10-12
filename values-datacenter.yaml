@@ -84,7 +84,6 @@ site:
     path: charts/datacenter/pipelines
 
   - name: tekton
-    namespace: tekton-pipelines
     project: datacenter
     path: charts/datacenter/tekton
 
