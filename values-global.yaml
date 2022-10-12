@@ -18,9 +18,9 @@ global:
     account: rh_emea_sa_bot
 
   datacenter:
-    clustername: cluster-spmgq
-    domain: spmgq.sandbox2039.opentlc.com
+    clustername: cluster-kskp6
+    domain: kskp6.sandbox824.opentlc.com
 
   edge:
-    clustername: cluster-spmgq
-    domain: spmgq.sandbox2039.opentlc.com
+    clustername: cluster-kskp6
+    domain: kskp6.sandbox824.opentlc.com
