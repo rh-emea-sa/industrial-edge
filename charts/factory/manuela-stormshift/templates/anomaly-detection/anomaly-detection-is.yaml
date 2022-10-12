@@ -30,3 +30,10 @@ spec:
     importPolicy: {}
     referencePolicy:
       type: Local
+  - name: 0.3.2-6
+    from:
+      kind: DockerImage
+      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-6
+    importPolicy: {}
+    referencePolicy:
+      type: Local
