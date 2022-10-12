@@ -1,7 +1,8 @@
+---
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: admin
+  name: admin-pipeline
   namespace: manuela-tst-all
 subjects:
   - kind: ServiceAccount
@@ -12,11 +13,12 @@ roleRef:
   kind: ClusterRole
   name: admin
 
+---
 # Fix for 4.10 as default SA is 'default'
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: admin
+  name: admin-default
   namespace: manuela-tst-all
 subjects:
   - kind: ServiceAccount
