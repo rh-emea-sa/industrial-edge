@@ -14,7 +14,7 @@ site:
   - manuela-data-lake-central-kafka-cluster
   - staging
   - openshift-storage
-  - kubeflow
+  - odh-applications
 
   subscriptions:
   - name: odf-operator
