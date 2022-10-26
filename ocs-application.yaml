@@ -20,14 +20,14 @@ spec:
         - name: global.pattern
           value: industrial-edge
         - name: global.valuesDirectoryURL
-          value: 'https://github.com/rh-emea-sa/industrial-edge/raw/odf'
+          value: 'https://github.com/rh-emea-sa-bot/industrial-edge/raw/ml-ci-cd-410'
       valueFiles:
         - >-
-          https://github.com/rh-emea-sa/industrial-edge/raw/odf/values-global.yaml
+          https://github.com/rh-emea-sa-bot/industrial-edge/raw/ml-ci-cd-410/values-global.yaml
         - >-
-          https://github.com/rh-emea-sa/industrial-edge/raw/odf/values-datacenter.yaml
+          https://github.com/rh-emea-sa-bot/industrial-edge/raw/ml-ci-cd-410/values-datacenter.yaml
     path: charts/global/openshift-container-storage
-    repoURL: 'https://github.com/rh-emea-sa/industrial-edge.git'
+    repoURL: 'https://github.com/rh-emea-sa-bot/industrial-edge.git'
     targetRevision: ml-ci-cd-410
   syncPolicy:
     automated: {}
