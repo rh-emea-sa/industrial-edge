@@ -18,9 +18,9 @@ global:
     account: rh_emea_sa_bot
 
   datacenter:
-    clustername: cluster-62fgq
-    domain: 62fgq.sandbox854.opentlc.com
+    clustername: cluster-t599m
+    domain: t599m.sandbox446.opentlc.com
 
   edge:
-    clustername: cluster-62fgq
-    domain: 62fgq.sandbox854.opentlc.com
+    clustername: cluster-t599m
+    domain: t599m.sandbox446.opentlc.com
