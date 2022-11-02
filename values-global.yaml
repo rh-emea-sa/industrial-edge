@@ -18,9 +18,9 @@ global:
     account: rh_emea_sa_bot
 
   datacenter:
-    clustername: cluster-zrf4n
-    domain: zrf4n.sandbox456.opentlc.com
+    clustername: cluster-hfzdp
+    domain: hfzdp.sandbox1312.opentlc.com
 
   edge:
-    clustername: cluster-zrf4n
-    domain: zrf4n.sandbox456.opentlc.com
+    clustername: cluster-hfzdp
+    domain: hfzdp.sandbox1312.opentlc.com
