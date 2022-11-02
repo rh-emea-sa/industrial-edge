@@ -7,7 +7,6 @@ site:
 
   namespaces:
   - open-cluster-management
-  - manuela-ml-workspace
   - manuela-tst-all
   - manuela-ci
   - manuela-data-lake-central-s3-store
@@ -74,7 +73,7 @@ site:
       - /spec/loggingCA
 
   - name: odh
-    namespace: manuela-ml-workspace
+    namespace: odh-applications
     project: datacenter
     path: charts/datacenter/opendatahub
 
