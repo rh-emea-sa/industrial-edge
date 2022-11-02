@@ -2,7 +2,7 @@ apiVersion: kfdef.apps.kubeflow.org/v1
 kind: KfDef
 metadata:
   name: opendatahub
-  namespace: odh-applications
+  namespace: manuela-ml-workspace
 spec:
   applications:
     - kustomizeConfig:
@@ -11,27 +11,13 @@ spec:
           path: odh-common
       name: odh-common
     - kustomizeConfig:
-        overlays:
-          - authentication
+        parameters:
+          - name: s3_endpoint_url
+            value: s3.odh.com
         repoRef:
           name: manifests
-          path: odh-dashboard
-      name: odh-dashboard
-    - kustomizeConfig:
-        repoRef:
-          name: manifests
-          path: odh-notebook-controller
-      name: odh-notebook-controller
-    - kustomizeConfig:
-        overlays:
-          - metadata-store-mariadb
-          - ds-pipeline-ui
-          - object-store-minio
-          - default-configs
-        repoRef:
-          name: manifests
-          path: data-science-pipelines
-      name: ds-pipelines
+          path: jupyterhub/jupyterhub
+      name: jupyterhub
     - kustomizeConfig:
         overlays:
           - additional
@@ -39,6 +25,13 @@ spec:
           name: manifests
           path: jupyterhub/notebook-images
       name: notebook-images
+    - kustomizeConfig:
+        overlays:
+          - authentication
+        repoRef:
+          name: manifests
+          path: odh-dashboard
+      name: odh-dashboard
   repos:
     - name: manifests
-      uri: 'https://github.com/opendatahub-io/odh-manifests/tarball/v1.4'
+      uri: 'https://github.com/opendatahub-io/odh-manifests/tarball/v1.3'
