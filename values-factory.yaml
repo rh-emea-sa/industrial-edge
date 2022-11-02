@@ -8,21 +8,21 @@ site:
   - manuela-stormshift-line-dashboard
   - manuela-stormshift-machine-sensor
   - manuela-stormshift-messaging
-  - manuela-factory-ml-workspace
- 
-  operatorgroupExcludes:
-  - manuela-factory-ml-workspace
+  # - manuela-factory-ml-workspace
+
+  # operatorgroupExcludes:
+  # - manuela-factory-ml-workspace
 
   subscriptions:
   - name: seldon-operator
     namespace: manuela-stormshift-messaging
     source: community-operators
     channel: stable
-    
+
   - name: amq-streams
     namespace: manuela-stormshift-messaging
     channel: amq-streams-1.8.x
-    
+
   - name: amq-streams
     namespace: factory-lake
     channel: amq-streams-1.8.x
@@ -53,10 +53,10 @@ site:
     plugin:
       name: helm-with-kustomize
 
-  - name: odh
-    namespace: manuela-factory-ml-workspace
-    project: factory
-    path: charts/datacenter/opendatahub
+  # - name: odh
+  #   namespace: manuela-factory-ml-workspace
+  #   project: factory
+  #   path: charts/datacenter/opendatahub
 
 
 #  To have apps in multiple flavors, use namespaces and use helm overrides as appropriate
@@ -69,15 +69,15 @@ site:
 #    targetRevision: stable
 #    overrides:
 #    - name: myparam
-#      value: myparam 
-#  
+#      value: myparam
+#
 #  - name: pipelines
 #    namespace: staging
 #    project: datacenter
 #    path: applications/pipeline
 #    repoURL: https://github.com/you/applications.git
 #    targetRevision: main
-#  
+#
 #   Additional applications
 #   Be sure to include additional resources your apps will require
 #   +X machines
