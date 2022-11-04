@@ -18,9 +18,9 @@ global:
     account: rh_emea_sa_bot
 
   datacenter:
-    clustername: cluster-hfzdp
-    domain: hfzdp.sandbox1312.opentlc.com
+    clustername: cluster-tpzcx
+    domain: tpzcx.sandbox1686.opentlc.com
 
   edge:
-    clustername: cluster-hfzdp
-    domain: hfzdp.sandbox1312.opentlc.com
+    clustername: cluster-tpzcx
+    domain: tpzcx.sandbox1686.opentlc.com
