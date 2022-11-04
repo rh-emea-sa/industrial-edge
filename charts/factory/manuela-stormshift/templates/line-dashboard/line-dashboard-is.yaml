@@ -7,13 +7,6 @@ spec:
   lookupPolicy:
     local: true
   tags:
-  - name: 0.3.1-8
-    from:
-      kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-8
-    importPolicy: {}
-    referencePolicy:
-      type: Local
   - name: 0.3.1-9
     from:
       kind: DockerImage
@@ -39,6 +32,13 @@ spec:
     from:
       kind: DockerImage
       name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-14
+    importPolicy: {}
+    referencePolicy:
+      type: Local
+  - name: 0.3.1-15
+    from:
+      kind: DockerImage
+      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-15
     importPolicy: {}
     referencePolicy:
       type: Local
