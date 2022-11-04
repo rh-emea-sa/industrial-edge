@@ -7,13 +7,6 @@ spec:
   lookupPolicy:
     local: true
   tags:
-  - name: 0.3.1-6
-    from:
-      kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-software-sensor:0.3.1-6
-    importPolicy: {}
-    referencePolicy:
-      type: Local
   - name: 0.3.1-7
     from:
       kind: DockerImage
@@ -39,6 +32,13 @@ spec:
     from:
       kind: DockerImage
       name: quay.io/rh_emea_sa_bot/iot-software-sensor:0.3.1-9
+    importPolicy: {}
+    referencePolicy:
+      type: Local
+  - name: 0.3.1-10
+    from:
+      kind: DockerImage
+      name: quay.io/rh_emea_sa_bot/iot-software-sensor:0.3.1-10
     importPolicy: {}
     referencePolicy:
       type: Local
