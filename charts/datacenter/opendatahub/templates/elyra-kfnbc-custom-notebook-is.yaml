@@ -1,0 +1,32 @@
+kind: ImageStream
+apiVersion: image.openshift.io/v1
+metadata:
+  annotations:
+    opendatahub.io/notebook-image-creator: opentlc-mgr
+    opendatahub.io/notebook-image-desc: Elyra notebook image that is compatible with Kubeflow Notebook Controller
+    opendatahub.io/notebook-image-messages: ''
+    opendatahub.io/notebook-image-name: Elyra for KFNBC
+    opendatahub.io/notebook-image-origin: Admin
+    opendatahub.io/notebook-image-phase: Succeeded
+    opendatahub.io/notebook-image-url: 'quay.io/mmurakam/elyra-kfnbc:v0.1.1'
+  name: elyra-kfnbc-custom-notebook
+  namespace: odh-applications
+  labels:
+    app.kubernetes.io/created-by: byon
+    opendatahub.io/notebook-image: 'true'
+spec:
+  lookupPolicy:
+    local: true
+  tags:
+    - name: v0.1.1
+      annotations:
+        opendatahub.io/notebook-python-dependencies: '[{"name":"Elyra","version":"1.12","visible":true}]'
+        opendatahub.io/notebook-software: '[{"name":"Python","version":"3.8","visible":true}]'
+        openshift.io/imported-from: 'quay.io/mmurakam/elyra-kfnbc:v0.1.1'
+      from:
+        kind: DockerImage
+        name: 'quay.io/mmurakam/elyra-kfnbc:v0.1.1'
+      generation: 2
+      importPolicy: {}
+      referencePolicy:
+        type: Source
