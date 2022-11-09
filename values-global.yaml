@@ -18,9 +18,9 @@ global:
     account: rh_emea_sa_bot
 
   datacenter:
-    clustername: cluster-tpzcx
-    domain: tpzcx.sandbox1686.opentlc.com
+    clustername: cluster-qjgqf
+    domain: qjgqf.sandbox2594.opentlc.com
 
   edge:
-    clustername: cluster-tpzcx
-    domain: tpzcx.sandbox1686.opentlc.com
+    clustername: cluster-qjgqf
+    domain: qjgqf.sandbox2594.opentlc.com
