@@ -18,9 +18,9 @@ global:
     account: rh_emea_sa_bot
 
   datacenter:
-    clustername: cluster-qjgqf
-    domain: qjgqf.sandbox2594.opentlc.com
+    clustername: cluster-9hhcs
+    domain: 9hhcs.sandbox1737.opentlc.com
 
   edge:
-    clustername: cluster-qjgqf
-    domain: qjgqf.sandbox2594.opentlc.com
+    clustername: cluster-9hhcs
+    domain: 9hhcs.sandbox1737.opentlc.com
