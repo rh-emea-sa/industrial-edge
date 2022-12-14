@@ -9,38 +9,38 @@ spec:
   lookupPolicy:
     local: false
   tags:
-  - name: 0.3.2-3
+  - name: 0.3.2-8
     from:
       kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-3
+      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-8
     importPolicy: {}
     referencePolicy:
       type: Local
-  - name: 0.3.2-5
+  - name: 0.3.2-9
     from:
       kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-5
+      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-9
     importPolicy: {}
     referencePolicy:
       type: Local
-  - name: 0.3.2-5
+  - name: 0.3.2-10
     from:
       kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-5
+      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-10
     importPolicy: {}
     referencePolicy:
       type: Local
-  - name: 0.3.2-6
+  - name: 0.3.2-11
     from:
       kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-6
+      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-11
     importPolicy: {}
     referencePolicy:
       type: Local
-  - name: 0.3.2-7
+  - name: 0.3.2-12
     from:
       kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-7
+      name: quay.io/rh_emea_sa_bot/iot-anomaly-detection:0.3.2-12
     importPolicy: {}
     referencePolicy:
       type: Local

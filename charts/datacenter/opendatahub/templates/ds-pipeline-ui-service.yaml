@@ -1,7 +1,8 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: ml-pipeline-ui
+  name: ds-pipeline-ui
+  namespace: odh-applications
 spec:
   ipFamilies:
     - IPv4
@@ -19,5 +20,5 @@ spec:
   ipFamilyPolicy: SingleStack
   sessionAffinity: None
   selector:
-    app: ml-pipeline-ui
-    application-crd-id: kubeflow-pipelines
+    app: ds-pipeline-ui
+    application-crd-id: data-science-pipelines

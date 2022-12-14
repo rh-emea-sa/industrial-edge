@@ -7,38 +7,38 @@ spec:
   lookupPolicy:
     local: true
   tags:
-  - name: 0.3.1-3
+  - name: 0.3.1-12
     from:
       kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-3
+      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-12
     importPolicy: {}
     referencePolicy:
       type: Local
-  - name: 0.3.1-6
+  - name: 0.3.1-14
     from:
       kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-6
+      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-14
     importPolicy: {}
     referencePolicy:
       type: Local
-  - name: 0.3.1-7
+  - name: 0.3.1-15
     from:
       kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-7
+      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-15
     importPolicy: {}
     referencePolicy:
       type: Local
-  - name: 0.3.1-8
+  - name: 0.3.1-16
     from:
       kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-8
+      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-16
     importPolicy: {}
     referencePolicy:
       type: Local
-  - name: 0.3.1-9
+  - name: 0.3.1-17
     from:
       kind: DockerImage
-      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-9
+      name: quay.io/rh_emea_sa_bot/iot-frontend:0.3.1-17
     importPolicy: {}
     referencePolicy:
       type: Local
